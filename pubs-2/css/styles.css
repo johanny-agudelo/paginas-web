@@ -1,0 +1,60 @@
+.brand {
+	font-size: 60px;
+	margin-left: 10px;
+	color: blue;
+
+
+}
+.navbar-default-nav{
+
+	/*background:  #A5ECBB;*/
+
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERpJTsAGDI8rkuAHLUdXrchiJa0CmFNbnwpy8XOiZJaplr8WL)
+
+}
+.footer {
+	background: #B2AFAF;
+	width: 100%;
+	display: inline-block;
+
+ }
+
+
+.mapa{
+	border: 10px;
+}
+.mail {
+	text-align: center;
+}
+
+.invitacion {
+	text-align: center;
+    color: red;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 25px;
+	
+}
+
+.p {
+
+	text-align: center;
+	font-family: 'Frijole', cursive;
+	color: #04BF6E;
+	font-size: 25px;
+
+}
+
+i {
+	font-size: 70px;
+
+}
+
+.icon {
+   text-align: center;
+    padding-bottom: 10px;
+    color: #555A58;
+
+}
+body {
+	background: red; 
+}

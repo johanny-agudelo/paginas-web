@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+<meta charset="utf-8">
+<meta name="wiewport" content="width-device-width,user-scalable-no,initial-scale-1.0,maximun-scale-1.0,minumun-scale-1.0">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+
+<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+
+
+<head>
+	<title>pubs</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+			<nav class="navbar-default-nav">
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#" aria-expanded="false">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="brand" href="http://localhost/ptf/pub-1/pubs.php" font-size="20">Pubs</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" >
+						<li  class="active"><a href="#">Servicios<span class="sr-only">(current)</span></a></li>
+						<li><a  href="#">Contactos</a></li>
+						<li class="dropdown">
+							<a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Busquedas<span class="caret"></span></a>
+							<ul  class="dropdown-menu">
+								<li ><a href="#mapa" >Ubicacion</a></li>
+								<li><a href="#">Menu</a></li>
+								<li><a href="#blog">blog</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#comentarios">comentarios</a></li>
+
+								<li><a href="http://localhost/ptf/Workshop/">perfil</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-left"></form>
+					<ul  class="nav navbar-nav navbar-right">
+						<li ><a href="http://localhost/ptf/Workshop/" type="btn-primary" >perfi</a></li>
+						<li class="dropdown">
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Musica</a></li>
+								<li><a href="#">Horarios</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Promociones</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		</div>
+	</div>
+
+
+	<!-- busqueda -->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+
+				<h2 class="w3-center">Busca tu estilo</h2>
+
+				<div class="w3-content w3-section">
+					<img class="mySlides" src="imagenes/1.jpg" style="width:100%" height="500">
+					<img class="mySlides" src="imagenes/6.jpg" style="width:100%" height="500">
+					<img class="mySlides" src="imagenes/8.jpg" style="width:100%" height="500">
+					<img class="mySlides" src="imagenes/11.jp.jpg" style="width:100%" height="500">
+					<img class="mySlides" src="imagenes/imagen .jpg" style="width:100%" height="500">
+					<img class="mySlides" src="imagenes/images.jpg" style="width:100%" height="500">
+					
+				</div>
+
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+							x[myIndex-1].style.display = "block";  
+					    setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+				</script>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- info blog  -->
+
+	<div class="container">
+		<div class="row content">
+			<div class="col-sm-3 sidenav">
+			   <a name="blog"></a>
+				<h4 class="blog"><a name="blog">Blog</a></h4>
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">Lugares</a></li>
+					<li><a href="#section2">Promociones</a></li>
+					<li><a href="#section3">Hora Feliz</a></li>
+					<li><a href="#section3">Mejore comentario</a></li>
+				</ul><br>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search Blog..">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+
+
+			<br>
+
+			<!--comentarios  -->
+
+
+			<div class="col-sm-9">
+				<h4><small><a name="comentarios"> COMENTARIOS RECIENTE </a></small></h4>
+				<hr>
+				<h2>Tonight</h2>
+				<h5><span class="glyphicon glyphicon-time"></span> Comentario de Jane Dane, Sep 27, 2015.</h5>
+				<h5><span class="label label-danger">enviar</span> <span class="label label-primary">unirse</span></h5><br>
+				<p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<br><br>
+
+				<h4><small>COMENTARIO RECIENTE </small></h4>
+				<hr>
+				<h2>BLOG OFICIAL</h2>
+				<h5><span class="glyphicon glyphicon-time"></span> comentario de John Doe, Sep 24, 2015.</h5>
+				<h5><span class="label label-success">enviar</span></h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<hr>
+
+				<h4>Comentario:</h4>
+				<form role="form">
+					<div class="form-group">
+						<textarea class="form-control" rows="3" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-success">Submit</button>
+				</form>
+				<br><br>
+
+				<p><span class="badge">2</span> Comentario:</p><br>
+
+				<div class="row">
+					<div class="col-sm-2 text-center">
+						<img src="imagenes/q.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+					</div>
+					<div class="col-sm-10">
+						<h4>lucas <small>Sep 29, 2015, 9:12 PM</small></h4>
+						<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+					</div>
+
+					<br>
+
+					<div class="col-sm-2 text-center">
+						<img src="imagenes/q.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+					</div>
+					<div class="col-sm-10">
+						<h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+						<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+					</div>
+					
+					<div class="col-sm-2 text-center">
+						<img src="imagenes/8.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+					</div>
+					<div class="col-sm-10">
+						<h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+						<p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<br>
+						<p><span class="badge">1</span> Comentario:</p><br>
+						<div class="row">
+							<div class="col-sm-2 text-center">
+								<img src="imagenes/11.jp.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+							</div>
+							<div class="col-xs-10">
+								<h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+								<p> WOW!</p>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-2 text-center">
+						<img src="imagenes/8.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+					</div>
+					<div class="col-sm-10">
+						<h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+						<p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<br>
+						<p><span class="badge">1</span> Comentario:</p><br>
+						<div class="row">
+							<div class="col-sm-2 text-center">
+								<img src="imagenes/11.jp.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+							</div>
+							<div class="col-xs-10">
+								<h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+								<p> WOW!</p>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="object">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+
+				      <h2 class="invitacion">Invitaciones</h2>
+					<article class="icon">
+				   
+				    <i class="ion-ios-videocam"></i>
+					<i class="ion-person-add"></i>
+					<i class="ion-beer"></i>
+					</article>
+				
+					<p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					
+					<hr>
+
+					<!--media object -->
+					<div class="media">
+						<div class="media-left">
+							<img src="imagenes/11.jpg" class="media-object" style="width:60px">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">invitacion</h4>
+							<!-- comentario left -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					
+					<hr>
+
+					<!--media object -->
+					<div class="media">
+						<div class="media-body">
+							<!-- comentario right -->
+							<h4 class="media-heading">invitacion</h4>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						   </div>
+						     <div class="media-right">
+							     <img src="imagenes/6.jpg" class="media-object" style="width:60px">
+						    </div>
+					 </div>
+
+					<hr>
+
+					<div class="media">
+						<div class="media-left">
+							<img src="imagenes/2.jpg" class="media-object" style="width:60px">
+						</div>
+						<div class="media-body">
+							<!-- comentario left -->
+							<h4 class="media-heading">invitacion</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					
+					<hr>
+					
+					<div class="media">
+						<div class="media-body">
+							<!-- comentario right -->
+							<h4 class="media-heading">invitacion</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="media-right">
+							<img src="imagenes/6.jpg" class="media-object" style="width:60px">
+						</div>
+					</div>
+                    <hr>
+					<div class="media">
+						<div class="media-left">
+							<img src="imagenes/11.jpg" class="media-object" style="width:60px">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">invitacion</h4>
+							<!-- comentario left -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					
+					<hr>
+
+					<!--media object -->
+					<div class="media">
+						<div class="media-body">
+							<!-- comentario right -->
+							<h4 class="media-heading">invitacion</h4>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						   </div>
+						     <div class="media-right">
+							     <img src="imagenes/6.jpg" class="media-object" style="width:60px">
+						    </div>
+					 </div>
+				 </div>
+		</div>
+	</div>
+	<hr>
+  </div>
+     
+    <br>
+
+	<!-- mapa -->
+	<div class="container">
+		<div class="row-fluid">
+			<div class="col-xs-12">
+				<div class="span8"><a name="mapa"> 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1869410100394!2d-58.367488684996076!3d-34.68847058043757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333295cd6b8e7%3A0x9b0f879f7815a221!2sHelguera+1674%2C+B1869AMB+Gerli%2C+Buenos+Aires!5e1!3m2!1sen!2sar!4v1498756143124" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</a></div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- form -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="form">
+					<h2></h2>
+					<form>
+						<div class="form-group">
+							<label for="email"><a name="email"></a>Email:</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="pwd">clave:</label>
+							<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox">recordar</label>
+						</div>
+						<button type="submit" class="btn btn-default">enviar</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<br>
+	<!-- footer -->
+
+
+	<div class="container well">
+		<h2><center>web pubs</center></h2>
+	</div>
+	
+		<div class="container">
+		    <div class="footer">
+			<div class="row">
+				<div class="col-md-4">
+				 <br>
+					<center>
+						<img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+						<br>
+						<h4 class="footertext">Programador</h4>
+						<p class="footertext">Colaboracion<br>
+						</center>
+					</div>
+					<div class="col-md-4">
+					<br>
+						<center>
+							<img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+							<br>
+							<h4 class="footertext">Diseños</h4>
+							<p class="footertext">fotografias<br>
+							</center>
+						</div>
+						<div class="col-md-4">
+						<br>
+							<center>
+								<img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+								<br>
+								<h4 class="footertext">edicion</h4>
+								<p class="footertext">This pretty site and the copy.<br>
+								</center>
+							</div>
+						</div>
+						<div class="row">
+							<p><center><a href="#">Contacto</a> <p class="footertext">johannyal@hotmail.com</p></center></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- script -->
+				<script language="javascript" src="js/validaciones.js"></script>
+				<script language="javascript">
+
+					<script type="text/javascript" src="http://www.google.com/jsapi?key=CODIGO-PERSONAL"></script>
+					<script src="js/java.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+					<script src="http://code.jquery.com/jquery.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+				<script type="text/javascript">
+                var bloc = document.getElementById("bloque");
+                navigator.geolocation.getCurrentPosition(showPosition); 
+                function showPosition(position) {
+                bloc.innerHTML = "Latitud: " + position.coords.latitude + 
+                "<br>Longitud: " + position.coords.longitude;}
+               </script>
+
+
+
+					<script src="Framework/js/bootstrap.min.js"></script>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
